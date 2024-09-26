@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "realSound",
+    "name": "realSounds",
     "slug": "realSound",
+    "scheme": "real-sound",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
