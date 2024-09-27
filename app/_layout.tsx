@@ -1,4 +1,4 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+/*import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -35,3 +35,29 @@ export default function RootLayout() {
     </ThemeProvider>
   );
 }
+*/
+
+import { StatusBar } from 'expo-status-bar'
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { Slot, Stack } from 'expo-router'
+
+const RootLayout = () => {
+    return (
+      <Stack>
+        <Stack.Screen name="index" options={{headerShown: false}} />
+      </Stack>
+    );
+}
+
+export default RootLayout 
+
+const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+})
